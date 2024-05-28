@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEMS=="block", SUBSYSTEM=="block", RUN{program}+="/bin/mkdir /media/%k" ,RUN{program}+="/usr/bin/systemd-mount --no-block --collect $devnode /media/%k"
